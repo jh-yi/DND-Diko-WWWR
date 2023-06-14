@@ -10,7 +10,7 @@ The dataset directory should have this basic structure:
 DND-Diko-WWWR/
     ├── WW2020/
         ├── images/
-            ├── 20200506_0.jpg
+            ├── 20200422_0.jpg
         ├── trainval.txt
         ├── test.txt
         └── labels_trainval.yml
