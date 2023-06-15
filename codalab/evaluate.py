@@ -37,7 +37,7 @@ if os.path.isdir(submit_dir) and os.path.isdir(truth_dir):
     accuracy1 = float(sum(1 for x,y in zip(sorted_truth1, sorted_pred1) if x == y)) / len(sorted_truth1)
 
     res = {
-            'accuracy': round((accuracy0+accuracy1)/2*100, 1), 
+            'accuracy_mean': round((accuracy0+accuracy1)/2*100, 1), 
             'accuracy_ww2020': round(accuracy0*100, 1),
             'accuracy_wr2021': round(accuracy1*100, 1),
             }

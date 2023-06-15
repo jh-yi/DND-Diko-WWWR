@@ -128,6 +128,7 @@ def get_optim(model, cfg):
         scheduler = ReduceLROnPlateau(optimizer, 'max', patience=3, factor=0.1, verbose=True, threshold=0.0001, threshold_mode='abs', cooldown=1)
         # scheduler = ReduceLROnPlateau(optimizer, 'max', patience=1, factor=0.5, verbose=True, threshold=0.0001, threshold_mode='abs', cooldown=0)
     elif cfg.train_set == 'trainval':
+        # scheduler = ReduceLROnPlateau(optimizer, 'max', patience=3, factor=0.1, verbose=True, threshold=0.0001, threshold_mode='abs', cooldown=1)
         # scheduler = CosineAnnealingLR(optimizer, T_max=50, eta_min=0)
         scheduler = CosineAnnealingWarmRestarts(optimizer, T_0=10, T_mult=2, eta_min=0)
         # scheduler = StepLR(optimizer, step_size=10, gamma=0.1)

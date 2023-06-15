@@ -88,6 +88,7 @@ def val_epoch(model, data_loader, cfg, is_final=False):
             preds = scores.argmax(1)
 
             if data_loader.dataset.split == 'val':
+            # if not is_final:
                 labels = batch['label_idxs'].to(device)
                 loss = F.cross_entropy(scores, labels)
                 loss_epoch.update(loss, bsz)
@@ -98,6 +99,7 @@ def val_epoch(model, data_loader, cfg, is_final=False):
             results.append(batch['img_name'][0]+' '+str(int(preds)))
 
     if data_loader.dataset.split == 'val':
+    # if not is_final:
         print("Val: elapsed_time: {:.2f}m Acc (val): {:.2f}% {} loss_epo_avg: {:.3f}"
         .format((timer_epoch.toc(average=False)) / 60, top1_epoch.avg.item() * 100.0, [top1_epoch.sum.item(), top1_epoch.count], loss_epoch.avg.item()), flush=True)  
 
@@ -124,7 +126,7 @@ def train_model(model, train_loader, val_loader, test_loader, start_epoch, cfg):
         # separate train and val set
         if val_loader is not None: 
             print("=================Epo {}: Validating=================".format(epoch))
-            cur_acc = val_epoch(model, val_loader, cfg)
+            cur_acc = val_epoch(model, val_loader, cfg, is_final=False)
 
             # save the best model
             if cur_acc > best_acc:
@@ -136,8 +138,8 @@ def train_model(model, train_loader, val_loader, test_loader, start_epoch, cfg):
         else:
             best_path = save_best_model(epoch, model, optimizer, suffix=cfg.exp_name)   # actually saving current model
             scheduler.step()
+            print("Current lr: ", scheduler.get_last_lr())
 
-        print("Current lr: ", scheduler.get_last_lr())
         if any([pg['lr'] <= cfg.TRAIN.LR * cfg.NGPUS * cfg.bsz / 999.0 for pg in optimizer.param_groups]):
             print("=================Testing=================")
 
@@ -168,7 +170,7 @@ if __name__ == '__main__':
     if not args.is_test:
         train_dataset = DND(cfg, split=cfg.train_set)
         train_loader = DataLoader(train_dataset, batch_size=cfg.bsz, shuffle=True, num_workers=cfg.NWORK, drop_last=False)
-        # val_dataset = DND(cfg, split='test') 
+        # val_dataset = DND(cfg, split='val') 
         # val_loader = DataLoader(val_dataset, batch_size=1, num_workers=cfg.NWORK, drop_last=False)
         val_loader = None
     test_dataset = DND(cfg, split='test')

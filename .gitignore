@@ -136,7 +136,9 @@ dmypy.json
 
 q.log/
 wandb/
-tfboard
+tfboard/
 datasets/cache/
 results/
 bk/
+codalab/
+!codalab/res_test
