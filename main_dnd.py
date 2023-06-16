@@ -182,6 +182,7 @@ if __name__ == '__main__':
     # print(print_para(model), flush=True)
 
     # load model
+    model = torch.nn.DataParallel(model) # , device_ids=[0, 1]
     model, start_epoch = load_model(cfg, model)
     model.to(device)
 

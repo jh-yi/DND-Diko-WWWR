@@ -4,7 +4,7 @@ python main_dnd.py \
  --use_cache \
  --p_interval 100 \
  --cfg ./configs/WW2020.yml \
- --exp_name WW2020_resnet50 \
+ --exp_name WW2020_swinv2s \
  --im_scale 896 \
  --bs 4 \
  --acc_bsz 4 \
