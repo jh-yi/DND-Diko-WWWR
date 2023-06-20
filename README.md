@@ -26,7 +26,7 @@ DND-Diko-WWWR/
 
 ## Guide for the Challenge at CVPPA@ICCV'23
 
-As part of the [8th Workshop on Computer Vision in Plant Phenotyping and Agriculture (CVPPA)](https://cvppa2023.github.io/) at the IEEE/CVF International Conference of Computer Vision (ICCV) 2023, we are organizing a challenge that aims at providing a solution to recognize nutrient deficiencies in winter wheat winter rye using UAV-based RGB images. 
+As part of the [8th Workshop on Computer Vision in Plant Phenotyping and Agriculture (CVPPA)](https://cvppa2023.github.io/) at the IEEE/CVF International Conference of Computer Vision (ICCV) 2023, we are organizing a [challenge](https://codalab.lisn.upsaclay.fr/competitions/13833) that aims at providing a solution to recognize nutrient deficiencies in winter wheat winter rye using UAV-based RGB images. 
 
 In this challenge, one has to provide a zipped file of two text file named "predictions_WW2020.txt" and "predictions_WR2021.txt" with no headers. Each line in the text file should state the image filename, followed by the prediction index (0-6). The file should contain a prediction for each of the test images, corresponding to 468 lines of text. A sample submission file is shown below:
 
