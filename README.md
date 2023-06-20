@@ -2,6 +2,9 @@
 
 We present the Deep Nutrient Deficiency - Dikopshof - Winter Wheat and Winter Rye (DND-Diko-WWWR) dataset, which consists of 1,800 RGB images of winter wheat (WW2020) and 1,800 RGB images of winter rye (WR2021). The images were captured by a camera mounted on a UAV at three time points at the long-term fertilizer experiment (LTFE) Dikopshof near Bonn, Germany. The images were annotated with seven types of fertilizer treatments. The dataset is used for image classification. 
 
+![Examples](https://raw.githubusercontent.com/image-hosting/ImageHosting/main/img/202306200458172.png)
+*Example images*
+
 ## Download
 The dataset can be downloaded from [PhenoRoam](https://phenoroam.phenorob.de/geonetwork/srv/eng/catalog.search#/metadata/2a2964ca-1120-4a07-9155-d910b399e97c).
 
