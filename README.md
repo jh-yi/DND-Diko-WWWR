@@ -47,7 +47,7 @@ An example of submission file can be download [here](https://github.com/jh-yi/DN
 
 Teams will compete to provide the highest top-1 accuracy on the subset of winter wheat (WW2020) and winter rye (WR2021), respectively. The ranking will be based on the average accuracy of WW2020 and WR2021.
 
-The best-performing solutions will be contacted by the workshop organizers after the end date of the challenge and we will have a part in the workshop to announce the winners of this challenge. Besides a certificate, the authors are invited to provide an overview of their technical approach.
+The best-performing solutions will be contacted by the workshop organizers after the end date of the challenge and we will have a part in the workshop to announce the winners of this challenge. Besides a certificate, the authors are invited to provide an overview of their technical approach (and codes with reproducible results).
 
 **Note**
 - It is allowed to use publicly available pre-trained models for weight initialization and transfer learning purposes.
@@ -77,7 +77,7 @@ Q: Is data augmentation allowed?
 A: Yes, as long as the augmentations are only applied to the provided data.
 
 Q: Can we use two different models for WW2020 and WR2021?
-A: No, the models should have the same architecture and hyper-parametrs, but you can finetune both models separately. 
+A: No, the models should have the same architecture, but you can finetune both models separately. 
 
 ## Cite
 
