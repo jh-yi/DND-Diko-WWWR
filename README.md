@@ -1,5 +1,7 @@
 # DND-Diko-WWWR
 
+- News: The preprint version of our paper is now available [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4549653).
+
 We present the Deep Nutrient Deficiency - Dikopshof - Winter Wheat and Winter Rye (DND-Diko-WWWR) dataset, which consists of 1,800 RGB images of winter wheat (WW2020) and 1,800 RGB images of winter rye (WR2021). The images were captured by a camera mounted on a UAV at three time points at the long-term fertilizer experiment (LTFE) Dikopshof near Bonn, Germany. The images were annotated with seven types of fertilizer treatments. The dataset is used for image classification. 
 
 ![Examples](https://raw.githubusercontent.com/image-hosting/ImageHosting/main/img/202306200458172.png)
@@ -80,6 +82,20 @@ Q: Can we use two different models for WW2020 and WR2021?
 A: No, the models should have the same architecture, but you can finetune both models separately. 
 
 ## Cite
+If you find this dataset useful for your research, please cite our [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4549653):
+@article{yi4549653non,
+  title={Non-Invasive Diagnosis of Nutrient Deficiencies in Winter Wheat and Winter Rye Using Uav-Based Rgb Images},
+  author={Yi, Jinhui and Lopez, Gina and Hadir, Sofia and Weyler, Jan and Klingbeil, Lasse and Deichmann, Marion and Gall, Juergen and Seidel, Sabine J},
+  journal={Available at SSRN 4549653}
+}
+@article{yi2020deep,  
+    title={Deep Learning for Non-Invasive Diagnosis of Nutrient Deficiencies in Sugar Beet Using RGB Images},  
+    author={Yi, Jinhui and Krusenbaum, Lukas and Unger, Paula and Hüging, Hubert and Seidel, Sabine J and Schaaf, Gabriel and Gall, Juergen},  
+    journal={Sensors},  
+    volume={20},  
+    pages={5893},  
+    year={2020},  
+}
 
 
 ## License
