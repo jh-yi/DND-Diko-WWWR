@@ -90,7 +90,8 @@ If you find this dataset useful for your research, please cite our [paper](https
   author={Yi, Jinhui and Lopez, Gina and Hadir, Sofia and Weyler, Jan and Klingbeil, Lasse and Deichmann, Marion and Gall, Juergen and Seidel, Sabine J},
   journal={Available at SSRN 4549653}
 }
-
+```
+```
 @article{yi2020deep,  
     title={Deep Learning for Non-Invasive Diagnosis of Nutrient Deficiencies in Sugar Beet Using RGB Images},  
     author={Yi, Jinhui and Krusenbaum, Lukas and Unger, Paula and Hüging, Hubert and Seidel, Sabine J and Schaaf, Gabriel and Gall, Juergen},  
