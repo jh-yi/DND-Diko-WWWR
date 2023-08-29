@@ -83,11 +83,14 @@ A: No, the models should have the same architecture, but you can finetune both m
 
 ## Cite
 If you find this dataset useful for your research, please cite our [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4549653):
+
+```
 @article{yi4549653non,
   title={Non-Invasive Diagnosis of Nutrient Deficiencies in Winter Wheat and Winter Rye Using Uav-Based Rgb Images},
   author={Yi, Jinhui and Lopez, Gina and Hadir, Sofia and Weyler, Jan and Klingbeil, Lasse and Deichmann, Marion and Gall, Juergen and Seidel, Sabine J},
   journal={Available at SSRN 4549653}
 }
+
 @article{yi2020deep,  
     title={Deep Learning for Non-Invasive Diagnosis of Nutrient Deficiencies in Sugar Beet Using RGB Images},  
     author={Yi, Jinhui and Krusenbaum, Lukas and Unger, Paula and Hüging, Hubert and Seidel, Sabine J and Schaaf, Gabriel and Gall, Juergen},  
@@ -96,6 +99,7 @@ If you find this dataset useful for your research, please cite our [paper](https
     pages={5893},  
     year={2020},  
 }
+```
 
 
 ## License
