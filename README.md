@@ -1,6 +1,8 @@
 # DND-Diko-WWWR
 
-- News: The preprint version of our paper is now available [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4549653).
+## 🚀 News
+- [Aug 22, 2025]： 💥💥💥 Our DND-Diko-WWWR has been accepted by the Journal of Computers and Electronics in Agriculture 2025！ The paper is available [here](https://www.sciencedirect.com/science/article/pii/S0168169925009718) and data is available [here](https://phenoroam.phenorob.de/geonetwork/srv/eng/catalog.search#/metadata/1272b197-11ad-4138-a872-dc31d8051726). 
+- [Aug 29, 2023]: 💥 The preprint version of our paper is now available [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4549653).
 
 We present the Deep Nutrient Deficiency - Dikopshof - Winter Wheat and Winter Rye (DND-Diko-WWWR) dataset, which consists of 1,800 RGB images of winter wheat (WW2020) and 1,800 RGB images of winter rye (WR2021). The images were captured by a camera mounted on a UAV at three time points at the long-term fertilizer experiment (LTFE) Dikopshof near Bonn, Germany. The images were annotated with seven types of fertilizer treatments. The dataset is used for image classification. 
 
